@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenGUALOTUNAEDGAREP1.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+
+
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" x:Name="lblUser" Text="Usuario Conectado : " />
+                <Label Grid.Row="1" Text="REGISTRO" HorizontalTextAlignment="Center" TextColor="Red" FontSize="40"></Label>
+
+                <Label Grid.Row="2" Text="Datos del estudiante" TextColor="Blue" FontSize="18"></Label>
+
+                <Entry  Grid.Row="3" x:Name="txtEstudiante" Keyboard="Text"
+                   Placeholder="Ingrese Nombre del Estudiante"></Entry>
+
+                <Entry Grid.Row="4" x:Name="txtAbono" Keyboard="Numeric"
+                   Placeholder="Ingrese monto inicial"></Entry>
+
+                <Label Grid.Row="5" Text="Saldo a diferir" />
+                <Entry Grid.Row="6" x:Name="txtSaldoPendiente" IsReadOnly="True"></Entry>
+
+                <Label Grid.Row="7" Text="Cuota mensual" />
+                <Entry  Grid.Row="8" x:Name="txtMensualidades" IsReadOnly="True" />
+
+                <Label  Grid.Row="9" Text="Pago Total" />
+                <Entry Grid.Row="10" x:Name="txtTotal" IsReadOnly="True" />
+            </Grid>
+            <Button x:Name="btnCalcular" Text="Guardar" Clicked="btnCalcular_Clicked" TextColor="Yellow" BackgroundColor="Blue"></Button>
+            <Button x:Name="btnImprimir" Text="Imprimir" Clicked="btnImprimir_Clicked" TextColor="Yellow" BackgroundColor="Blue"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenGUALOTUNAEDGAREP1.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name="lblUser" Text="Usuario Conectado : " />
+            <Label Text="RESUMEN DEL REGISTRO" HorizontalTextAlignment="Center" TextColor="Red" FontSize="35"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Text="Nombre del Estudiante" />
+                <Entry Grid.Row="1" x:Name="txtEstudiante" IsReadOnly="True"></Entry>
+                <Label Grid.Row="2" Text="Valor total a pagar" />
+                <Entry  Grid.Row="3" x:Name="txtTotal" IsReadOnly="True"></Entry>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+   
